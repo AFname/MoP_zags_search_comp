@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Поиск ЗАГС: Класс HashTable</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Поиск ЗАГС
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_hash_table.html','','class_hash_table-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс HashTable</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Хеш-таблица с разрешением коллизий методом цепочек.  
+ <a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a24ff49482c9d098e54f6b1b04a75f77a" id="r_a24ff49482c9d098e54f6b1b04a75f77a"><td class="memItemLeft"><a id="a24ff49482c9d098e54f6b1b04a75f77a" name="a24ff49482c9d098e54f6b1b04a75f77a"></a>
+&#160;</td><td class="memItemRight"><b>HashTable</b> (const <a class="el" href="class_hash_table.html">HashTable</a> &amp;)=delete</td></tr>
+<tr class="memitem:aa3841f685c4c52e4845293466d1141ef" id="r_aa3841f685c4c52e4845293466d1141ef"><td class="memItemLeft"><a id="aa3841f685c4c52e4845293466d1141ef" name="aa3841f685c4c52e4845293466d1141ef"></a>
+<a class="el" href="class_hash_table.html">HashTable</a> &amp;&#160;</td><td class="memItemRight"><b>operator=</b> (const <a class="el" href="class_hash_table.html">HashTable</a> &amp;)=delete</td></tr>
+<tr class="memitem:a20380c465ceea56e8b342cb73dd243ae" id="r_a20380c465ceea56e8b342cb73dd243ae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a20380c465ceea56e8b342cb73dd243ae">insert</a> (const <a class="el" href="struct_zags_record.html">ZagsRecord</a> &amp;rec)</td></tr>
+<tr class="memdesc:a20380c465ceea56e8b342cb73dd243ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставляет запись в таблицу.  <br /></td></tr>
+<tr class="memitem:a03c83cf06bfe4e6cd91c61682c941426" id="r_a03c83cf06bfe4e6cd91c61682c941426"><td class="memItemLeft">std::vector&lt; <a class="el" href="struct_zags_record.html">ZagsRecord</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a03c83cf06bfe4e6cd91c61682c941426">search</a> (const std::string &amp;key) const</td></tr>
+<tr class="memdesc:a03c83cf06bfe4e6cd91c61682c941426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ищет все записи с заданным ключом.  <br /></td></tr>
+<tr class="memitem:ac66f4112c565ea71db9563e71c455e4a" id="r_ac66f4112c565ea71db9563e71c455e4a"><td class="memItemLeft">long long&#160;</td><td class="memItemRight"><a class="el" href="#ac66f4112c565ea71db9563e71c455e4a">getCollisions</a> () const</td></tr>
+<tr class="memdesc:ac66f4112c565ea71db9563e71c455e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает накопленное число коллизий с момента создания таблицы.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:a98a3bba0cc13b05bfaccc82faedeb689" id="r_a98a3bba0cc13b05bfaccc82faedeb689"><td class="memItemLeft">static constexpr std::size_t&#160;</td><td class="memItemRight"><a class="el" href="#a98a3bba0cc13b05bfaccc82faedeb689">CAP</a> = 1'000'003ULL</td></tr>
+<tr class="memdesc:a98a3bba0cc13b05bfaccc82faedeb689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество ячеек таблицы (простое число).  <br /></td></tr>
+<tr class="memitem:a2e1791af39ec84b53f8c62da661d6db6" id="r_a2e1791af39ec84b53f8c62da661d6db6"><td class="memItemLeft">static constexpr std::size_t&#160;</td><td class="memItemRight"><a class="el" href="#a2e1791af39ec84b53f8c62da661d6db6">BASE</a> = 31ULL</td></tr>
+<tr class="memdesc:a2e1791af39ec84b53f8c62da661d6db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основание полиномиального хеша.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Хеш-таблица с разрешением коллизий методом цепочек. </p>
+<p>Хеш-функция: полиномиальный хеш строки с основанием BASE=31. Размер таблицы CAP=1 000 003 (простое число) для равномерного распределения. Поиск: O(1) в среднем случае. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00450">450</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="adc3bf2b214c572819ba957ad314d7db3" name="adc3bf2b214c572819ba957ad314d7db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc3bf2b214c572819ba957ad314d7db3">&#9670;&#160;</a></span>HashTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HashTable::HashTable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00455">455</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  455</span>                : table(<span class="keyword">new</span> HNode* [<a class="code hl_variable" href="#a98a3bba0cc13b05bfaccc82faedeb689">CAP</a>]()), collisions(0) {</div>
+<div class="line"><span class="lineno">  456</span>        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; <a class="code hl_variable" href="#a98a3bba0cc13b05bfaccc82faedeb689">CAP</a>; ++i) table[i] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  457</span>    }</div>
+<div class="ttc" id="aclass_hash_table_html_a98a3bba0cc13b05bfaccc82faedeb689"><div class="ttname"><a href="#a98a3bba0cc13b05bfaccc82faedeb689">HashTable::CAP</a></div><div class="ttdeci">static constexpr std::size_t CAP</div><div class="ttdoc">Количество ячеек таблицы (простое число).</div><div class="ttdef"><b>Определения</b> <a href="main_8cpp_source.html#l00452">main.cpp:452</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9ce5569bb945880cacb29aaba6f3e3f9" name="a9ce5569bb945880cacb29aaba6f3e3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce5569bb945880cacb29aaba6f3e3f9">&#9670;&#160;</a></span>~HashTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HashTable::~HashTable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00458">458</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  458</span>                 {</div>
+<div class="line"><span class="lineno">  459</span>        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; <a class="code hl_variable" href="#a98a3bba0cc13b05bfaccc82faedeb689">CAP</a>; ++i) {</div>
+<div class="line"><span class="lineno">  460</span>            HNode* cur = table[i];</div>
+<div class="line"><span class="lineno">  461</span>            <span class="keywordflow">while</span> (cur) { HNode* t = cur-&gt;<a class="code hl_variable" href="struct_h_node.html#aa41a26212fc23844b2d13a5095f5eb7b">next</a>; <span class="keyword">delete</span> cur; cur = t; }</div>
+<div class="line"><span class="lineno">  462</span>        }</div>
+<div class="line"><span class="lineno">  463</span>        <span class="keyword">delete</span>[] table;</div>
+<div class="line"><span class="lineno">  464</span>    }</div>
+<div class="ttc" id="astruct_h_node_html_aa41a26212fc23844b2d13a5095f5eb7b"><div class="ttname"><a href="struct_h_node.html#aa41a26212fc23844b2d13a5095f5eb7b">HNode::next</a></div><div class="ttdeci">HNode * next</div><div class="ttdef"><b>Определения</b> <a href="main_8cpp_source.html#l00439">main.cpp:439</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="ac66f4112c565ea71db9563e71c455e4a" name="ac66f4112c565ea71db9563e71c455e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac66f4112c565ea71db9563e71c455e4a">&#9670;&#160;</a></span>getCollisions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long HashTable::getCollisions </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает накопленное число коллизий с момента создания таблицы. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество коллизий. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00511">511</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  511</span>{ <span class="keywordflow">return</span> collisions; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a20380c465ceea56e8b342cb73dd243ae" name="a20380c465ceea56e8b342cb73dd243ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20380c465ceea56e8b342cb73dd243ae">&#9670;&#160;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HashTable::insert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_zags_record.html">ZagsRecord</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вставляет запись в таблицу. </p>
+<p>Если узел с таким ключом уже есть в цепочке — запись добавляется в его records. Иначе создаётся новый узел в начале цепочки. Если слот уже занят другим ключом — счётчик коллизий увеличивается на 1.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rec</td><td>Запись для вставки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00477">477</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  477</span>                                       {</div>
+<div class="line"><span class="lineno">  478</span>        std::size_t idx = hashStr(rec.<a class="code hl_variable" href="struct_zags_record.html#a63655d051744f8949cdd015ff9767cf1">groom_fio</a>);</div>
+<div class="line"><span class="lineno">  479</span>        HNode* cur = table[idx];</div>
+<div class="line"><span class="lineno">  480</span>        <span class="keywordflow">while</span> (cur) {</div>
+<div class="line"><span class="lineno">  481</span>            <span class="keywordflow">if</span> (cur-&gt;<a class="code hl_variable" href="struct_h_node.html#a271345490c4aea18d7e193a67b595c39">key</a> == rec.<a class="code hl_variable" href="struct_zags_record.html#a63655d051744f8949cdd015ff9767cf1">groom_fio</a>) { cur-&gt;<a class="code hl_variable" href="struct_h_node.html#a18de57d9bde527802a24a928ee85c1cb">records</a>.push_back(rec); <span class="keywordflow">return</span>; }</div>
+<div class="line"><span class="lineno">  482</span>            cur = cur-&gt;<a class="code hl_variable" href="struct_h_node.html#aa41a26212fc23844b2d13a5095f5eb7b">next</a>;</div>
+<div class="line"><span class="lineno">  483</span>        }</div>
+<div class="line"><span class="lineno">  484</span>        <span class="keywordflow">if</span> (table[idx]) ++collisions;</div>
+<div class="line"><span class="lineno">  485</span>        HNode* node = <span class="keyword">new</span> HNode(rec.<a class="code hl_variable" href="struct_zags_record.html#a63655d051744f8949cdd015ff9767cf1">groom_fio</a>);</div>
+<div class="line"><span class="lineno">  486</span>        node-&gt;<a class="code hl_variable" href="struct_h_node.html#a18de57d9bde527802a24a928ee85c1cb">records</a>.push_back(rec);</div>
+<div class="line"><span class="lineno">  487</span>        node-&gt;<a class="code hl_variable" href="struct_h_node.html#aa41a26212fc23844b2d13a5095f5eb7b">next</a> = table[idx];</div>
+<div class="line"><span class="lineno">  488</span>        table[idx] = node;</div>
+<div class="line"><span class="lineno">  489</span>    }</div>
+<div class="ttc" id="astruct_h_node_html_a18de57d9bde527802a24a928ee85c1cb"><div class="ttname"><a href="struct_h_node.html#a18de57d9bde527802a24a928ee85c1cb">HNode::records</a></div><div class="ttdeci">std::vector&lt; ZagsRecord &gt; records</div><div class="ttdef"><b>Определения</b> <a href="main_8cpp_source.html#l00438">main.cpp:438</a></div></div>
+<div class="ttc" id="astruct_h_node_html_a271345490c4aea18d7e193a67b595c39"><div class="ttname"><a href="struct_h_node.html#a271345490c4aea18d7e193a67b595c39">HNode::key</a></div><div class="ttdeci">std::string key</div><div class="ttdoc">Узел цепочки хеш-таблицы.</div><div class="ttdef"><b>Определения</b> <a href="main_8cpp_source.html#l00437">main.cpp:437</a></div></div>
+<div class="ttc" id="astruct_zags_record_html_a63655d051744f8949cdd015ff9767cf1"><div class="ttname"><a href="struct_zags_record.html#a63655d051744f8949cdd015ff9767cf1">ZagsRecord::groom_fio</a></div><div class="ttdeci">std::string groom_fio</div><div class="ttdoc">Запись о браке из базы данных ЗАГС.</div><div class="ttdef"><b>Определения</b> <a href="main_8cpp_source.html#l00046">main.cpp:46</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a03c83cf06bfe4e6cd91c61682c941426" name="a03c83cf06bfe4e6cd91c61682c941426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03c83cf06bfe4e6cd91c61682c941426">&#9670;&#160;</a></span>search()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="struct_zags_record.html">ZagsRecord</a> &gt; HashTable::search </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ищет все записи с заданным ключом. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Искомое ФИО жениха. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор всех записей с совпадающим ключом. Пустой вектор если ключ не найден. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00497">497</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  497</span>                                                             {</div>
+<div class="line"><span class="lineno">  498</span>        HNode* cur = table[hashStr(key)];</div>
+<div class="line"><span class="lineno">  499</span>        <span class="keywordflow">while</span> (cur) {</div>
+<div class="line"><span class="lineno">  500</span>            <span class="keywordflow">if</span> (cur-&gt;<a class="code hl_variable" href="struct_h_node.html#a271345490c4aea18d7e193a67b595c39">key</a> == key) <span class="keywordflow">return</span> cur-&gt;<a class="code hl_variable" href="struct_h_node.html#a18de57d9bde527802a24a928ee85c1cb">records</a>;</div>
+<div class="line"><span class="lineno">  501</span>            cur = cur-&gt;<a class="code hl_variable" href="struct_h_node.html#aa41a26212fc23844b2d13a5095f5eb7b">next</a>;</div>
+<div class="line"><span class="lineno">  502</span>        }</div>
+<div class="line"><span class="lineno">  503</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><span class="lineno">  504</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a2e1791af39ec84b53f8c62da661d6db6" name="a2e1791af39ec84b53f8c62da661d6db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e1791af39ec84b53f8c62da661d6db6">&#9670;&#160;</a></span>BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t HashTable::BASE = 31ULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Основание полиномиального хеша. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00453">453</a></p>
+
+</div>
+</div>
+<a id="a98a3bba0cc13b05bfaccc82faedeb689" name="a98a3bba0cc13b05bfaccc82faedeb689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98a3bba0cc13b05bfaccc82faedeb689">&#9670;&#160;</a></span>CAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t HashTable::CAP = 1'000'003ULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество ячеек таблицы (простое число). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00452">452</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="main_8cpp_source.html">main.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_hash_table.html">HashTable</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

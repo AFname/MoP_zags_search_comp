@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Поиск ЗАГС: Структура RBNode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Поиск ЗАГС
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_r_b_node.html','','struct_r_b_node-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Структура RBNode</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:adf3e5760f31e6cb8b192e1a234d028f5" id="r_adf3e5760f31e6cb8b192e1a234d028f5"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#adf3e5760f31e6cb8b192e1a234d028f5">RBNode</a> (const std::string &amp;k)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:af017529faedece4e653a551db7be374b" id="r_af017529faedece4e653a551db7be374b"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#af017529faedece4e653a551db7be374b">key</a></td></tr>
+<tr class="memdesc:af017529faedece4e653a551db7be374b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узел красно-чёрного дерева.  <br /></td></tr>
+<tr class="memitem:a037689e7a49de9e22d0e79ddc918c7b5" id="r_a037689e7a49de9e22d0e79ddc918c7b5"><td class="memItemLeft">std::vector&lt; <a class="el" href="struct_zags_record.html">ZagsRecord</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a037689e7a49de9e22d0e79ddc918c7b5">records</a></td></tr>
+<tr class="memitem:ae4e4e3f311175b4eaee1ac77f7e64c55" id="r_ae4e4e3f311175b4eaee1ac77f7e64c55"><td class="memItemLeft">RBColor&#160;</td><td class="memItemRight"><a class="el" href="#ae4e4e3f311175b4eaee1ac77f7e64c55">color</a> = RBColor::RED</td></tr>
+<tr class="memitem:a3345545f8a1678010bca11b5f7153a4a" id="r_a3345545f8a1678010bca11b5f7153a4a"><td class="memItemLeft"><a class="el" href="struct_r_b_node.html">RBNode</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a3345545f8a1678010bca11b5f7153a4a">left</a> = nullptr</td></tr>
+<tr class="memitem:af82826872827c548a5713eb84f264767" id="r_af82826872827c548a5713eb84f264767"><td class="memItemLeft"><a class="el" href="struct_r_b_node.html">RBNode</a> *&#160;</td><td class="memItemRight"><a class="el" href="#af82826872827c548a5713eb84f264767">right</a> = nullptr</td></tr>
+<tr class="memitem:a131e0d1a4f73d55e6b5ad282c6846612" id="r_a131e0d1a4f73d55e6b5ad282c6846612"><td class="memItemLeft"><a class="el" href="struct_r_b_node.html">RBNode</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a131e0d1a4f73d55e6b5ad282c6846612">parent</a> = nullptr</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00249">249</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="adf3e5760f31e6cb8b192e1a234d028f5" name="adf3e5760f31e6cb8b192e1a234d028f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf3e5760f31e6cb8b192e1a234d028f5">&#9670;&#160;</a></span>RBNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RBNode::RBNode </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>k</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00256">256</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  256</span>: <a class="code hl_variable" href="#af017529faedece4e653a551db7be374b">key</a>(k) {}</div>
+<div class="ttc" id="astruct_r_b_node_html_af017529faedece4e653a551db7be374b"><div class="ttname"><a href="#af017529faedece4e653a551db7be374b">RBNode::key</a></div><div class="ttdeci">std::string key</div><div class="ttdoc">Узел красно-чёрного дерева.</div><div class="ttdef"><b>Определения</b> <a href="main_8cpp_source.html#l00250">main.cpp:250</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="ae4e4e3f311175b4eaee1ac77f7e64c55" name="ae4e4e3f311175b4eaee1ac77f7e64c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e4e3f311175b4eaee1ac77f7e64c55">&#9670;&#160;</a></span>color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RBColor RBNode::color = RBColor::RED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Цвет узла: RED или BLACK. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00252">252</a></p>
+
+</div>
+</div>
+<a id="af017529faedece4e653a551db7be374b" name="af017529faedece4e653a551db7be374b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af017529faedece4e653a551db7be374b">&#9670;&#160;</a></span>key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string RBNode::key</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Узел красно-чёрного дерева. </p>
+<p>Ключ узла — ФИО жениха. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00250">250</a></p>
+
+</div>
+</div>
+<a id="a3345545f8a1678010bca11b5f7153a4a" name="a3345545f8a1678010bca11b5f7153a4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3345545f8a1678010bca11b5f7153a4a">&#9670;&#160;</a></span>left</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_b_node.html">RBNode</a>* RBNode::left = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Указатель на левого ребёнка. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00253">253</a></p>
+
+</div>
+</div>
+<a id="a131e0d1a4f73d55e6b5ad282c6846612" name="a131e0d1a4f73d55e6b5ad282c6846612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131e0d1a4f73d55e6b5ad282c6846612">&#9670;&#160;</a></span>parent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_b_node.html">RBNode</a>* RBNode::parent = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Указатель на родителя; необходим для балансировки. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00255">255</a></p>
+
+</div>
+</div>
+<a id="a037689e7a49de9e22d0e79ddc918c7b5" name="a037689e7a49de9e22d0e79ddc918c7b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a037689e7a49de9e22d0e79ddc918c7b5">&#9670;&#160;</a></span>records</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="struct_zags_record.html">ZagsRecord</a>&gt; RBNode::records</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Все записи с данным ключом (поддержка дубликатов). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00251">251</a></p>
+
+</div>
+</div>
+<a id="af82826872827c548a5713eb84f264767" name="af82826872827c548a5713eb84f264767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af82826872827c548a5713eb84f264767">&#9670;&#160;</a></span>right</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_b_node.html">RBNode</a>* RBNode::right = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Указатель на правого ребёнка. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00254">254</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li><a class="el" href="main_8cpp_source.html">main.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="struct_r_b_node.html">RBNode</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>
